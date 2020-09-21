@@ -2,6 +2,7 @@ package com.web.collectiondemo;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class CollectionDemo01 {
     public static void main(String[] args) {
@@ -23,6 +24,12 @@ public class CollectionDemo01 {
         for (int i=0;i<arr.length;i++)
         {
             System.out.println("arr ==="+arr[i]);
+        }
+
+        //集合遍历 ==》迭代器
+        Iterator it=collections.iterator();
+        while (it.hasNext()){
+            System.out.println("集合遍历==>"+it.next());//next() 指针移到下一位
         }
 
     }
