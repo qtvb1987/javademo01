@@ -15,11 +15,13 @@ public class CollectionDemo02 {
         collection.add("hello3");
         collection.add("hello4");
 
+        //java.util.ConcurrentModificationException
+        //在迭代器遍历过程中，不能修改集合长度
         //迭代器
         Iterator iterator=collection.iterator();
         while (iterator.hasNext()){
             Object o1=iterator.next();
-            String s1=(String) o1;
+            String s1=(String) o1;//向下转型
             if(s1.equals("hello2")){
                 collection.add("hello5");
             }

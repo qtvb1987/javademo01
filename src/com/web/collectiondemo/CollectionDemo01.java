@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
+/**
+ * collection存储元素特点，无序 可重复
+ */
 public class CollectionDemo01 {
     public static void main(String[] args) {
         Collection collections=new ArrayList();
